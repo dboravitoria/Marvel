@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Marvel</title>
+     <link rel="icon" type="image/x-icon" href="/static/img/marvel.svg">
+     <link rel="stylesheet" href="/static/style.css">
+     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+     <script src="/static/script.js"></script>
+    </head>
+    <body>
+      <div class="player-ctrl">
+        <!-- Play Button -->
+        <a id="play" onclick="playShow()"><i class="ion-ios-play"></i></a>
+        <!-- Pause Button -->
+        <a id="pause" onclick="pauseShow()" style="display:none;"><i class="ion-ios-pause"></i></a>
+        <h4>Aperte o play e aguarde para ter a expericência completa!!</h4>
+      </div>
+      <!-- Audio player -->
+      <audio id="audio">
+          <source src="/audio/vingadores.mp3" type="audio/mp3">
+      </audio>
+
+        <header>
+            <nav class="caixa">
+                <div class="logo">
+                    <h1><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="300" height="150" viewBox="0 0 500 200" id="logo">
+                        <path fill="#f0141e" d="M0 0h500v200H0z"/><path d="M423.12 46.619V15.991h-85.706l-14.11 102.282-13.94-102.282h-30.908l3.454 27.312c-3.563-7-16.211-27.312-44.061-27.312-.185-.012-30.945 0-30.945 0l-.128 149.084-22.523-149.084-40.484-.012-23.304 154.467.013-154.455H81.726l-13.965 86.768-13.604-86.768H15.399v167.932h30.523v-80.944l13.886 80.944h16.224l13.69-80.944v80.944h58.838l3.558-25.83h23.688l3.558 25.83 57.771.037h.042v-.037H237.249v-54.504l7.074-1.024 14.661 55.565h29.883l-.012-.037H288.94l-19.238-65.11c9.741-7.179 20.752-25.379 17.822-42.798v-.006c.036.226 18.164 108.026 18.164 108.026l35.534-.11 24.279-152.203v152.203h57.617v-30.199h-27.344v-38.507h27.344v-30.66h-27.344v-37.94h27.346zM155.713 131.47l8.387-71.802 8.69 71.802h-17.077zm88.708-33.155c-2.344 1.123-4.784 1.685-7.172 1.691v-54.01c.037 0 .093-.006.153-.006 2.38-.018 20.203.714 20.203 26.709 0 13.598-6.06 22.174-13.184 25.616zm240.186 55.383v30.188h-56.214V15.967h30.272v137.731h25.942z" fill="#fff"/></svg></a></h1>
+                </div>
+                <div id="menu-bar">
+                    <div id="menu" onclick="onClickMenu()">
+                      <span id="bar1" class="bar"></span>
+                      <span id="bar2" class="bar"></span>
+                      <span id="bar3" class="bar"></span>
+                    </div>
+                <ul class="nav" id="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Fases</a></li>
+                    <li><a href="#">Membros</a></li>
+                </ul>
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
+            </nav>
+        </header> 
+        <main>
+          <div class="logo">
+            <img src="/static/img/avengers.png" alt="" width="300px" height="150px" class="foto">
+          </div>
+          
+          <div class="personagens">
+            <div class="herois">
+                <ul>
+                  <div id="grupo1">
+                    <li class="item">
+                      <span class="filho1"></span>
+                      <span class="filho2"></span>
+                      <span class="filho3"></span>
+                      <span class="filho4"></span>
+                      <div class="imgBx">
+                        <img src="/static/img/capitaoamerica.png" class="vingador" id="vingador">
+                      </div>
+                      <div class="content">
+                        <h3><img src="/static/img/capitao.png" alt="capitao américa" width="150px" height="30px"></h3>
+                        <p>
+                          Steve Rogers, um jovem franzino, se voluntaria para um experimento que o transforma no super soldado Capitão América durante a Segunda Guerra Mundial.<br> Ele combate a organização nazista Hydra, liderada pelo Caveira Vermelha, e se sacrifica para salvar o mundo, ficando congelado por décadas.<br> Ao acordar nos dias atuais, Rogers se torna um símbolo de heroísmo e liderança, lutando ao lado dos Vingadores e enfrentando dilemas morais em um mundo moderno complexo, se tornando o Primeiro Vingador.</p>
+                      </div>
+                    </li>
+                    
+                    <li class="item">
+                      <span class="filho1" class="ferro"></span>
+                      <span class="filho2" class="ferro"></span>
+                      <span class="filho3" class="ferro"></span>
+                      <span class="filho4" class="ferro"></span>
+                      <div class="imgBx">
+                        <img src="/static/img/homemferro.png" class="vingador" id="vingador">
+                      </div>
+                      <div class="content">
+                        <h3><img src="/static/img/iron.png" alt="homem de ferro" width="150px" height="30px"></h3>
+                        <p>
+                          Tony Stark, um bilionário e gênio inventor, é sequestrado e forçado a construir uma arma de destruição, mas em vez disso cria uma armadura para escapar, tornando-se o Homem de Ferro. <br>Ele luta contra ameaças como Obadiah Stane e Ivan Vanko, enquanto lida com questões pessoais e seu legado como herói e empresário.<br> Stark enfrenta desafios como a doença causada pelos reatores de arco em seu peito e a responsabilidade de proteger o mundo como membro fundador dos Vingadores juntamente com Nick Fury.</p>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <span class="filho1"></span>
+                      <span class="filho2"></span>
+                      <span class="filho3"></span>
+                      <span class="filho4"></span>
+                      <div class="imgBx">
+                        <img src="/static/img/thorcorpo.png" class="vingador" id="vingador">
+                      </div>
+                      <div class="content">
+                        <h3><img src="/static/img/thor.png" alt="thor" width="140px" height="35px"></h3>
+                        <p>Thor é um poderoso deus nórdico, filho de Odin, o rei de Asgard. Ele é enviado à Terra como punição e aprende o valor da humildade ao se tornar um humano.<br> Com seu martelo encantado Mjolnir, ele luta contra inimigos como o seu irmão Loki e a ameaça cósmica do Titã Louco Thanos. <br>Thor enfrenta desafios pessoais, como a perda de seu martelo e a batalha contra seu próprio passado, para se tornar um líder digno e protetor de Asgard e dos Nove Reinos.</p>
+                      </div>
+                    </li>
+                  </div>
+
+                  <div id="grupo2">
+                    <li class="item">
+                      <span class="filho1"></span>
+                      <span class="filho2"></span>
+                      <span class="filho3"></span>
+                      <span class="filho4"></span>
+                      <div class="imgBx">
+                        <img src="/static/img/hulkcorpo.png" class="vingador"id="vingador">
+                      </div>
+                      <div class="content">
+                        <h3><img src="/static/img/hulk.png" alt="hulk" width="140px" height="50px"></h3>
+                        <p>Bruce Banner, um cientista que pela sua área de estudos foi exposto a radiação gama, transformando-o no Hulk, um monstro verde de incrível força quando está com raiva. Ele luta contra o controle do Hulk e busca uma cura para sua condição enquanto enfrenta vilões como o Abominável.<br> Banner se junta aos Vingadores, contribuindo com sua força e inteligência para proteger o mundo, e lida com questões de identidade e controle emocional.</p>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <span class="filho1"></span>
+                      <span class="filho2"></span>
+                      <span class="filho3"></span>
+                      <span class="filho4"></span>
+                      <div class="imgBx">
+                        <img src="/static/img/viuva.png" class="vingador" id="viuva">
+                      </div>
+                      <div class="content">
+                        <h3><img src="/static/img/black.png" alt="viúva negra" width="140px" height="50px"></h3>
+                        <p>Natasha Romanoff, também conhecida como Viúva Negra, é uma ex-assassina russa treinada pela Sala Vermelha, que se torna uma agente da <strong>S.H.I.E.L.D</strong>. <br> Ela luta contra seu passado sombrio ao enfrentar ameaças como o Soldado Invernal e o vilão russo Dreykov.<br> Romanoff se junta aos Vingadores, onde destaca suas habilidades de combate e espionagem. Ela sacrifica sua vida para obter a Joia da Alma e ajudar a derrotar Thanos, mostrando sua coragem e redenção.</p>
+                      </div>
+                    </li>
+                    
+                    <li class="item">
+                      <span class="filho1"></span>
+                      <span class="filho2"></span>
+                      <span class="filho3"></span>
+                      <span class="filho4"></span>
+                      <div class="imgBx">
+                        <img src="/static/img/gav.png" class="vingador" id="vingador" >
+                      </div>
+                      <div class="content">
+                        <h3><img src="/static/img/gavia.png" alt="gaviao arqueiro" width="140px" height="50px"></h3>
+                        <p>Clint Barton, o Gavião Arqueiro, é um ex-agente da <strong>S.H.I.E.L.D</strong> com habilidades excepcionais em arco e flecha. <br>Ele se une aos Vingadores e desafia ameaças globais ao lado de seus colegas super-humanos sendo um suporte mais pé no chão. Barton enfrenta desafios pessoais, incluindo a perda da família e momentos de conflito interno.<br> Sua parceria com a Viúva Negra é fundamental para suas missões e apesar de não ter superpoderes, Clint tem uma destreza e coragem o tornam um membro valioso da equipe.</p>
+                      </div>
+                    </li>
+                  </div>
+              </div>
+          </ul>
+         </div>
+         <section class="video">
+          <iframe src="https://www.youtube.com/embed/Y92G_M9Ko_s?si=UpV_btEnks3kQMvj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+         </section>
+         <section class="quarteto">
+          <img src="/static/img/Quarteto.webp" alt="quarteto" id="quarteto">
+          <div class="link">
+              <h4 class="ancora">Marvel anuncia elenco de “Quarteto Fantástico”<a href="https://www.cnnbrasil.com.br/entretenimento/marvel-anuncia-elenco-de-quarteto-fantastico-confira/" id="ancora" target="_blank">Acesse o link</a></h4>
+          </div>
+         </section>
+         <!--<section class="assemble">
+          <img src="/pagina-marvel/static/img/vingadores.jpg" alt="" class="avengers">
+         </section>-->
+         <section class="ordem">
+          <!--<h4 class="filmes">Ordem Cronológica dos Filmes</h4>-->
+          <ul>
+            <h4 class="filmes">Ordem Cronológica</h4>
+            <div class="fase1">
+              
+              <li class="filme">
+                  <div class="imgbox">
+                    <input type="radio" name="slide" id="c1">
+                    <label for="c1" class="card">
+                      <div class="row">
+                    </label>
+                  </div>
+              </li>
+              <li class="filme">
+                  <div class="imgbox">
+                    <input type="radio" name="slide" id="c2">
+                    <label for="c2" class="card">
+                      <div class="row">
+                    </label>
+                  </div>
+              </li>
+              <li class="filme">
+                <div class="imgbox">
+                  <input type="radio" name="slide" id="c3">
+                  <label for="c3" class="card">
+                    <div class="row">
+                  </label>
+                </div>
+            </li>
+            <li class="filme">
+              <div class="imgbox">
+                <input type="radio" name="slide" id="c4">
+                <label for="c4" class="card">
+                  <div class="row">
+                </label>
+              </div>
+          </li>
+          <li class="filme">
+            <div class="imgbox">
+              <input type="radio" name="slide" id="c5">
+              <label for="c5" class="card">
+                <div class="row">
+              </label>
+            </div>
+        </li>
+        <li class="filme">
+          <div class="imgbox">
+            <input type="radio" name="slide" id="c6">
+            <label for="c6" class="card">
+              <div class="row">
+            </label>
+          </div>
+      </li>
+        </div>
+          </ul>
+      </section>
+        </main>
+         <footer>
+            <a href="https://pt-br.facebook.com/MarvelBR/" target="_blank" rel="external"><img src="/static/img/face.png" alt="Facebook" class="redesocial" class="face"></a>
+			<a href="https://www.instagram.com/marvelbrasil/?hl=pt-br" target="_blank" rel="external"><img src="/static/img/insta.jpeg" alt="Instagram" class="redesocial"></a>
+			<a href="https://twitter.com/marvel" target="_blank" rel="external"><img src="/static/img/twitter.jpeg" alt="Twitter" class="redesocial"></a>
+			<a href="https://www.youtube.com/channel/UCvC4D8onUfXzvjTOM-dBfEA" target="_blank" rel="external"><img src="/static/img/you.webp" alt="YouTube" class="redesocial"></a>
+			<p class="copyright">&copy; Copyright Marvel - 2022</p>
+         </footer>       
+    </body>
+</html>

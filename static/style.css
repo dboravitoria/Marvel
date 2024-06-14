@@ -1,0 +1,536 @@
+body{
+    background-color: #c0c0c0;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-ctrl {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #F0131E;
+   height: 60px;
+   width: 100%;
+   position: absolute;
+   top: 0;
+ }
+ .ion-ios-play, .ion-ios-pause {
+   font-size: 20px;
+   color: #fff;
+   line-height: 20px;
+   padding: 10px 5px;
+ }
+ h4 {
+   padding-left: 20px;
+   color: #222;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 17px;
+   font-weight: 400;
+   font-style: italic;
+   text-decoration: underline;
+ }
+ #play,  #pause{
+   background-color: #222;
+   border-radius: 5px;
+   padding: 10px;
+   width:18px;
+   height: 18px;
+   cursor: pointer;
+ }
+.caixa{
+   position: absolute;
+   top: 60px;
+   text-align: top;
+   width: 100%;
+   height: 140px;
+   right: 0;
+   margin: 0;
+   background: url("img/back.jpg");
+   padding: 0 0;
+}
+#logo{
+    position: relative;
+    float : right;  
+    width: 130px;
+    height: 90px;
+    margin: 10px 25px;
+    top: 25%;
+}
+#menu{
+    width: 35px;
+    height: 30px;
+    margin: 60px 0 20px 20px;
+    cursor: pointer;
+    float: right;
+ }
+ .bar{
+    height: 5px;
+    width: 100%;
+    background-color: #ffffff;
+    display: block;
+    border-radius: 5px;
+    transition: 0.5s ease;
+ }
+ #bar1{
+    transform: translateY(-4px);
+ }
+ #bar3{
+    transform: translateY(4px);
+ }
+ .nav li a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform:uppercase;
+ }
+ .nav li a:hover{
+    font-weight: bold;
+ }
+ .nav li{
+  list-style: none;
+  padding: 16px 0;  
+ }
+ .nav{
+    padding: 0;
+    margin: 0 ;
+    transition: 0.5s ease;
+    display: none;
+ }
+ .menu-bg, #menu-bar{
+    top: 0;
+    left: 0;
+    position: absolute;
+ }
+ .menu-bg{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin:20px 0 20px 20px;
+    background: #F0131E;
+    border: 1px solid #222;
+    border-radius: 50%;
+    transition: 0.3s ease;
+ }
+ #menu-bar{
+  z-index: 2;  
+ }
+ .change-bg{
+    float: left;
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%, -30%);
+ }
+ .change-bar{
+    background-color: white;
+ }
+ .change #bar1{
+    transform: translateY(4px) rotateZ(-45deg);
+ }
+ .change #bar3{
+    transform: translateY(-6px) rotate(45deg);
+ }
+ .change #bar2{
+    opacity: 0; 
+ }
+ .change{
+    display: block;
+ }
+ main{
+    margin: 0px;
+    padding: 0px;
+    height: 1700px;
+ }
+ ul {
+   list-style: none;
+}
+.foto{
+   position: relative;
+   height: 200px;
+   margin-left: 39%;
+   margin-top: 15%;
+}
+#grupo1{
+   width: 100%;
+   height: 450px;
+   display: flex;
+   float: left;
+   justify-content: space-around;
+   flex-direction: row;
+}
+#grupo2{
+   width: 100%;
+   margin-top: 5px;
+   height: 550px;
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+   float: left;
+}
+.item{
+   background-color: #c0c0c0;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   width: 200px;
+   height: 350px;
+   border-radius: 8px;
+   position: relative;
+   overflow: hidden;
+}
+.personagens {
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+   text-align: center;
+   width: 100%;
+   flex-direction: row;
+   flex-wrap: wrap;
+   background-color: #ffffff;
+   height: 880px;
+   border-radius: 8px;
+   overflow: hidden;
+}
+.herois{
+   display: flex;
+   float: left;
+   flex-direction: row;
+   justify-content: center;
+
+}
+.content{
+   box-sizing: border-box;
+   width: 150px;
+   height: 50px;
+   margin: 0 auto;
+}
+p{
+   visibility: hidden;
+   opacity: 0;
+   font-size: 14px;
+}
+.vingador{
+   height: 250px;
+   width: 180px;
+   border-radius: 8px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   text-align: center;
+   font-size: 12px;
+}
+h3{
+   font-weight: bold;
+   font-size: 18px;
+   font-family: 'relaway' sans-serif;
+   text-transform: uppercase;
+   font-style: italic;
+   margin-bottom: 5px;
+}
+.item:hover{
+   background-color: #c0c0c0;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   width: 550px;
+   height: 380px; 
+   transition: 0.5s;
+   display: flex;
+   text-align: center;
+   justify-content: space-between;
+   margin-right: 50px;
+   margin-left: 5px;
+   overflow: hidden;
+}
+.item:hover .vingador{
+   text-align: center;  
+   margin-left: 40px;
+   margin-top: 20px;
+   width: 200px;
+   height: 325px;
+}
+.item:hover h3{
+   text-align: center;
+   margin-left: 40px;
+}
+.item:hover .content{
+   margin-right:100px;
+}
+.item:hover .content p{
+   visibility: visible;
+   opacity: 1;
+   transition-delay: 0.5s;
+   margin-bottom: 50px;
+   margin-right: 40px;
+   width: 150%;
+   text-indent: 5px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 14px;
+   font-weight: 400;
+   font-style: italic;
+}
+.personagens .item:hover .filho1{
+   position: absolute;
+   padding: 1px;
+   top: 60;
+   left: 40;
+   width: 500px;
+   height: 2px;
+   background: linear-gradient(to right, transparent, #F0131E);
+   animation: animar1 2s linear infinite;
+   
+}
+@keyframes animar1{
+   0%{
+      transform: translateX(-100%);
+   }
+   100%{
+      transform: translateX(100%);
+   }
+}
+.personagens .item:hover .filho2{
+   position: absolute;
+   padding: 1px;
+   top: 50;
+   right: 40;
+   height: 350px;
+   width: 3px;
+   background: linear-gradient(to top, transparent, #F0131E);
+   animation: animar2 2s linear infinite;
+   animation-delay: 1s;
+}
+@keyframes animar2{
+   0%{
+      transform: translateY(100%);
+   }
+   100%{
+      transform: translateY(-100%);
+   }
+}
+.personagens .item:hover .filho3{
+   position: absolute;
+   padding: 1px;
+   bottom: 0;
+   right: 380;
+   width: 500px;
+   height: 2px;
+   background: linear-gradient(to left, transparent, #F0131E);
+   animation: animar3 2s linear infinite;
+}
+@keyframes animar3{
+   0%{
+      transform: translateX(100%);
+   }
+   100%{
+      transform: translateX(-100%);
+   }
+}
+.personagens .item:hover .filho4{
+   position: absolute;
+   padding: 2px;
+   bottom: 0;
+   left: 99%;
+   height: 350px;
+   width: 2px;
+   background: linear-gradient(to bottom, transparent, #F0131E);
+   animation: animar4 2s linear infinite;
+   animation-delay: 1s;
+}
+@keyframes animar4{
+   0%{
+      transform: translateY(-100%);
+   }
+   100%{
+      transform: translateY(100%);
+   }
+}
+.video{
+   background: #fff;
+   width: 50%;
+   height: 380px;
+   margin-top: 25px;
+   border-radius: 8px;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+iframe{
+   width: 560px;
+   height: 315px;
+   border-radius: 8px;
+}
+.quarteto{
+   background: #fff;
+   width: 40%;
+   height: 380px;
+   margin-top: -419px;
+   border-radius: 8px;
+   padding: 20px;
+   display: flex;
+   float: right;
+}
+#quarteto{
+   width: 450px;
+   height: 340px;
+   margin: 0 auto;
+   margin-left: 5%;
+   border-radius: 8px;
+}
+.ancora{
+   font-size: 14px;
+   margin-top: 30px;
+   margin-left: -15%;
+}
+#ancora{
+   color: #222;
+   margin-left: 10px;
+}
+.link{
+   margin-top: 325px;
+   margin-left: -100%;
+}
+.ordem{
+   width: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: start;
+   background-color: white;
+   margin-top: 25px;
+   border-radius: 8px;
+   height: 900px;
+   margin-left: 5%;
+}
+.filmes{
+   position: absolute;
+   text-decoration: none;
+   font-weight: 600;
+   font-size: 25px;
+   margin-bottom: 290px;
+   margin-left: 29%;
+}
+.img{
+   height: 200px;
+   width: 120px;
+}
+.fase1{
+   width: 100%;
+   height: 300px;
+   display: flex;
+   flex-wrap: nowrap;
+   text-align: center;
+   align-items: center;
+   float: left;
+   margin-top: 50px;
+}
+.card{
+   width: 150px;
+   height: 200px;
+   border-radius: .75rem;
+   background-size: cover;
+   cursor: pointer;
+   overflow: hidden;
+   border-radius: 2rem;
+   margin: 5px 10px;
+   display: flex;
+   align-items: flex-end;
+   transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+   box-shadow: 0px 10px 30px - 5px rgba(0, 0, 0, 0.8);
+}
+.card > .row{
+   color: #c0c0c0;
+   display: flex;
+   flex-wrap: nowrap;
+}
+.card >.row > .icon{
+   background-color: transparent;
+   color: white;
+   border-radius: 50%;
+   width: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 15px;
+}
+.card > .row > .description{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   overflow: hidden;
+   height: 80px;
+   width: 520px;
+   opacity: 0;
+   transform: translateY(30px);
+   transition-delay: 3s;
+   transition: all .3s ease;
+}
+.description p{
+   color: white;
+   padding-top: 5px;
+}
+.description h5{
+   text-transform: uppercase;
+
+}
+input{
+   display: none;
+}
+input:checked +label{
+   width: 350px;
+   height: 550px;
+   margin-top: 300px;
+   transition: 0.3s ease;
+}
+input:checked +label .description{
+   opacity: 1 !important;
+   transform: translateY(0) !important;
+}
+.card[for="c1"]{
+   background-image: url(/static/img/primeirovingador.jpg);
+}
+.card[for="c2"]{
+   background-image: url(/static/img/capitamarvel.jpg);
+}
+.card[for="c3"]{
+   background-image: url(/static/img/incrivelhulk.jpg);
+}
+.card[for="c4"]{
+   background-image: url(/static/img/homemferro.webp);
+}
+.card[for="c5"]{
+   background-image: url(/static/img/homemdeferro2.webp);
+}
+.card[for="c6"]{
+   background-image: url(/static/img/thorfilme.webp);
+}
+ footer {
+    position: absolute;
+    bottom: -400%;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    right: 0;
+    margin: 0;
+    background: url("img/back.jpg");
+    padding: 0 0;
+    }
+ 
+ footer p{
+     visibility: visible;
+     opacity: 1;
+     color: #fff;
+     margin: 0 auto;
+     font-size: 13px;
+     text-transform: uppercase;
+     }
+ .face{
+   width: 28px;
+   height: 28px;
+ }
+ .redesocial{
+    width: 32px;
+    height: 32px;
+    padding: 30px 20px; 
+    border-radius: 50%;
+ }
+ .redesocial:hover{
+    width: 38px;
+    height: 38px;
+ }
