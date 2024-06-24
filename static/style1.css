@@ -4,6 +4,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .player-ctrl {
    display: flex;
@@ -148,7 +149,6 @@ body{
 .foto{
    position: relative;
    height: 200px;
-   margin-left: 39%;
    margin-top: 15%;
 }
 #grupo1{
@@ -499,12 +499,6 @@ input:checked +label .description{
 }
 .card[for="c10"]{
    background-image: url(/static/img/soldadoinvernal.jpg);
-}
-.card[for="c11"]{
-   background-image: url(/static/img/guardioesvol1.jpg);
-}
-.card[for="c12"]{
-   background-image: url(/static/img/guardioesvol2.jpg);
 }
  footer {
     position: absolute;
