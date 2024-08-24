@@ -388,7 +388,7 @@ iframe{
    margin-left: -100%;
 }
 .ordem{
-   width: 90%;
+   width:90%;
    display: flex;
    justify-content: center;
    text-align: center;
@@ -396,8 +396,8 @@ iframe{
    background-color: white;
    margin-top: 90px;
    border-radius: 8px;
-   height: 900px;
-   margin-left: 5%;
+   height: 1300px;
+   margin-left: 6%;
    padding-top: -50px;
 }
 .filmes{
@@ -414,7 +414,7 @@ iframe{
    height: 200px;
    width: 120px;
 }
-.fase1, .fase2{
+.fase1, .fase2, .fase3, .fase4, .fase5{
    position: absolute;
    width: 90%;
    height: 300px;
@@ -422,7 +422,7 @@ iframe{
    flex-wrap: nowrap;
    text-align: center;
    align-items: center; 
-   left: 30px;
+   left: 25px;
    justify-content: space-around;
 }
 .fase1{
@@ -432,6 +432,18 @@ iframe{
 .fase2{
    margin-top: 250px;
    z-index: 1;
+}
+.fase3{
+   margin-top: 500px;
+   z-index: 2;
+}
+.fase4{
+   margin-top: 750px;
+   z-index: 1;
+}
+.fase5{
+   margin-top: 1000px;
+   z-index: 2;
 }
 .card{
    width: 150px;
@@ -446,7 +458,6 @@ iframe{
    display: flex;
    align-items: flex-end;
    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
-   box-shadow: 0px 10px 30px - 5px rgba(0, 0, 0, 0.8);
 }
 .description p{
    color: white;
@@ -500,9 +511,58 @@ input:checked +label .description{
 .card[for="c10"]{
    background-image: url(/static/img/soldadoinvernal.jpg);
 }
+.card[for="c11"]{
+   background-image: url(/static/img/guardioesvol1.jpg);
+}
+.card[for="c12"]{
+   background-image: url(/static/img/guardioesvol2.jpg);
+}
+.card[for="c13"]{
+   background-image: url(/static/img/eradeultron.jpg);
+}
+.card[for="c13"]{
+   background-image: url(/static/img/eradeultron.jpg);
+}
+.card[for="c14"]{
+   background-image: url(/static/img/antman.jpg);
+}
+.card[for="c15"]{
+   background-image: url(/static/img/guerracivil.jpg);
+}
+.card[for="c16"]{
+   background-image: url(/static/img/panteranegra.jpg);
+}
+.card[for="c17"]{
+   background-image: url(/static/img/homemdevolta.jpg);
+}
+.card[for="c18"]{
+   background-image: url(/static/img/filmeviuvanegra.jpg);
+}
+.card[for="c19"]{
+   background-image: url(/static/img/doutorestranho.jpg);
+}
+.card[for="c20"]{
+   background-image: url(/static/img/ragnarok.jpg);
+}
+.card[for="c21"]{
+   background-image: url(/static/img/wasp.jpg);
+}
+.card[for="c22"]{
+   background-image: url(/static/img/guerrainfinita.jpg);
+}
+.card[for="c23"]{
+   background-image: url(/static/img/ultimato.jpg);
+}
+.card[for="c24"]{
+   background-image: url(/static/img/loki.jpeg);
+}
+.card[for="c25"]{
+   background-image: url(/static/img/wandavision.jpeg);
+}
+
  footer {
     position: absolute;
-    bottom: -400%;
+    bottom: -500%;
     text-align: center;
     width: 100%;
     height: 150px;
