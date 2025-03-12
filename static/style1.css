@@ -482,82 +482,82 @@ input:checked +label .description{
    text-align: center;
 }
 .card[for="c1"]{
-   background-image: url(/static/img/primeirovingador.jpg);
+   background-image: url(/Marvel/static/img/primeirovingador.jpg);
 }
 .card[for="c2"]{
-   background-image: url(/static/img/capitamarvel.jpg);
+   background-image: url(/Marvel/static/img/capitamarvel.jpg);
 }
 .card[for="c3"]{
-   background-image: url(/static/img/incrivelhulk.jpg);
+   background-image: url(/Marvel/static/img/incrivelhulk.jpg);
 }
 .card[for="c4"]{
-   background-image: url(/static/img/homemferro.webp);
+   background-image: url(/Marvel/static/img/homemferro.webp);
 }
 .card[for="c5"]{
-   background-image: url(/static/img/homemdeferro2.webp);
+   background-image: url(/Marvel/static/img/homemdeferro2.webp);
 }
 .card[for="c6"]{
-   background-image: url(/static/img/thorfilme.webp);
+   background-image: url(/Marvel/static/img/thorfilme.webp);
 }
 .card[for="c7"]{
-   background-image: url(/static/img/theavengers.jpg);
+   background-image: url(/Marvel/static/img/theavengers.jpg);
 }
 .card[for="c8"]{
-   background-image: url(/static/img/homemdeferro3.webp);
+   background-image: url(/Marvel/static/img/homemdeferro3.webp);
 }
 .card[for="c9"]{
-   background-image: url(/static/img/mundosombrio.jpg);
+   background-image: url(/Marvel/static/img/mundosombrio.jpg);
 }
 .card[for="c10"]{
-   background-image: url(/static/img/soldadoinvernal.jpg);
+   background-image: url(/Marvel/static/img/soldadoinvernal.jpg);
 }
 .card[for="c11"]{
-   background-image: url(/static/img/guardioesvol1.jpg);
+   background-image: url(/Marvel/static/img/guardioesvol1.jpg);
 }
 .card[for="c12"]{
-   background-image: url(/static/img/guardioesvol2.jpg);
+   background-image: url(/Marvel/static/img/guardioesvol2.jpg);
 }
 .card[for="c13"]{
-   background-image: url(/static/img/eradeultron.jpg);
+   background-image: url(/Marvel/static/img/eradeultron.jpg);
 }
 .card[for="c13"]{
-   background-image: url(/static/img/eradeultron.jpg);
+   background-image: url(/Marvel/static/img/eradeultron.jpg);
 }
 .card[for="c14"]{
-   background-image: url(/static/img/antman.jpg);
+   background-image: url(/Marvel/static/img/antman.jpg);
 }
 .card[for="c15"]{
-   background-image: url(/static/img/guerracivil.jpg);
+   background-image: url(/Marvel/static/img/guerracivil.jpg);
 }
 .card[for="c16"]{
-   background-image: url(/static/img/panteranegra.jpg);
+   background-image: url(/Marvel/static/img/panteranegra.jpg);
 }
 .card[for="c17"]{
-   background-image: url(/static/img/homemdevolta.jpg);
+   background-image: url(/Marvel/static/img/homemdevolta.jpg);
 }
 .card[for="c18"]{
-   background-image: url(/static/img/filmeviuvanegra.jpg);
+   background-image: url(/Marvel/static/img/filmeviuvanegra.jpg);
 }
 .card[for="c19"]{
-   background-image: url(/static/img/doutorestranho.jpg);
+   background-image: url(/Marvel/static/img/doutorestranho.jpg);
 }
 .card[for="c20"]{
-   background-image: url(/static/img/ragnarok.jpg);
+   background-image: url(/Marvel/static/img/ragnarok.jpg);
 }
 .card[for="c21"]{
-   background-image: url(/static/img/wasp.jpg);
+   background-image: url(/Marvel/static/img/wasp.jpg);
 }
 .card[for="c22"]{
-   background-image: url(/static/img/guerrainfinita.jpg);
+   background-image: url(/Marvel/static/img/guerrainfinita.jpg);
 }
 .card[for="c23"]{
-   background-image: url(/static/img/ultimato.jpg);
+   background-image: url(/Marvel/static/img/ultimato.jpg);
 }
 .card[for="c24"]{
-   background-image: url(/static/img/loki.jpeg);
+   background-image: url(/Marvel/static/img/loki.jpeg);
 }
 .card[for="c25"]{
-   background-image: url(/static/img/wandavision.jpeg);
+   background-image: url(/Marvel/static/img/wandavision.jpeg);
 }
 
  footer {
